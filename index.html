@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carta de Restaurante</title>
+        <meta name="description" content="Ejercicio de flexbox">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__logo" src="./img/logo.svg">
+            <p class="header__nombre"><a href="./index.html">Burger Amanda</a></p>
+                        
+            <nav class="header__nav">
+                <a href="#">Nuestra carta</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <main class="contenedor">
+            <div class="container">
+                <ul class="slider">
+                    <li id="slide1">
+                        <img src="./img/Entrantes2.jpg" alt="slide">
+                    </li>
+                    <li id="slide2">
+                       <img src="./img/01.jpg" alt="slide">
+                    </li>
+                    <li id="slide3">
+                        <img src="./img/postre01.jpg" alt="slide">
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1">1</a>
+                    </li>
+                    <li>
+                        <a href="#slide2">2</a>
+                    </li>
+                    <li>
+                        <a href="#slide3">3</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Entrantes -->
+            <div class="contenedor">
+                <hr>
+                <h2>Entrantes</h2>
+                <hr>
+                <section>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/Entrantes1.jpg" alt="Entrantes de pollo">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Entrantes de pollo</h2>
+                        </div>
+                    </div>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/Entrantes2.jpg" alt="Titanas">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Titanas</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Hamburguesas -->
+            <div class="contenedor">
+                <hr>
+                <h2>Hamburguesas</h2>
+                <hr>
+                <section>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/01.jpg" alt="Hamburguesa de cerdo">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Hamburguesa Black Angus</h2>
+                        </div>
+                    </div>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/02.jpg" alt="Hamburguesa de pollo">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Hamburguesa estilo Kentucky</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Postres -->
+            <div class="contenedor">
+                <hr>
+                <h2>Postres</h2>
+                <hr>
+                <section>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/postre01.jpg" alt="Tarta Red Velvet">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Tarta Red Velvet</h2>
+                        </div>
+                    </div>
+                    <div id="elemento">
+                        <div class="elemento__imagen">
+                            <img src="./img/postre02.jpg" alt="Shake Milk">
+                        </div>
+                        <div class="elemento__nombre">
+                            <h2>Shake Milk</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__nombre">Burger Amanda</p>            
+            <nav class="footer__nav">
+                <a href="#">Nuestra carta</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </footer>
+    </body>
+</html>
