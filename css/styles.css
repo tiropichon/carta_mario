@@ -26,6 +26,7 @@ hr {
   width: 100%;
   height: 2px;
   border-top: #f7be68;
+  border-color: #f7be68;
   padding: 0;
 }
 
@@ -37,6 +38,7 @@ hr {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 img {
@@ -91,9 +93,7 @@ section {
 
 .header__nav a, .footer__nav a {
   margin: 0 1rem 0 1rem;
-  color: black;
 }
-
 
 /** slide **/
 
@@ -109,7 +109,7 @@ section {
 ul, li {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none inside;
 }
 
 ul.slider{
@@ -123,10 +123,18 @@ ul.slider li {
     left: 0px;
     top: 0px;
     opacity: 0;
-    width: inherit;
-    height: inherit;
+	width: inherit;
+	height: inherit;
     transition: opacity .5s;
     background:#fff;
+}
+
+ul.slider li:first-child{
+	opacity: 1;
+}
+
+ul.slider li:target{
+	opacity:1;
 }
 
 ul.slider li img{  
@@ -137,12 +145,8 @@ ul.slider li img{
   object-fit: cover;
 }
 
-ul.slider li:first-child {
-    opacity: 1; /*Mostramos el primer <li>*/
-}
-
-ul.slider li:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+.nav-menu{
+position:relative;
 }
 
 .menu{
@@ -165,6 +169,16 @@ ul.slider li:target {
   height: 60px;
   font-size: 20px;
   border-radius: 100%;
+}
+
+.menu li a:hover{
+	background-color: #00324b;
+	color: #f90;
+}
+
+.menu li a:active{
+	background:#f90;
+	color:#00324b;
 }
 /*Fin slide*/
 
@@ -189,18 +203,23 @@ h2 {
 }
 
 #elemento:hover {
-  transform: rotateY(180deg);
+  /*transform: rotateY(180deg);*/
 }
 
 .elemento__imagen{
-  width: 100%;
-  height: 100%;
+  /*width: 100%;
+  height: 100%;*/
   display: block;
-  border-bottom: 1px solid #f7be68;
+}
+
+#elemento:hover {
+	transform: rotateY(180deg);
+	opacity: 0;
 }
 
 .elemento__nombre {
   height: 20%;
   display: block;
   text-align: center;
+  border-top: 1px solid #f7be68;
 }
