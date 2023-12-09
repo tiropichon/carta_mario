@@ -22,13 +22,13 @@ p {
   color: var(--colorPrimario);
 }
 
-hr {
+/*hr {
   width: 100%;
   height: 2px;
   border-top: #f7be68;
   border-color: #f7be68;
   padding: 0;
-}
+}*/
 
 /** Globales **/
 .contenedor {
@@ -60,6 +60,33 @@ section {
   align-items: center;
 }
 
+.header__logo {
+  width: 3%;
+  height: 48px;
+  margin: 0 2rem 0 2rem;
+}
+
+.header__nombre{
+  width: 68%;
+  margin: 0 0 0 2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: black;
+}
+
+.header__nav{
+  width: 32%;
+  margin: 0 1rem 0 1rem;
+  line-height: 1.6;
+}
+
+.header__nav a{
+  margin: 0 1rem 0 1rem;
+}
+
+
+/* footer */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -70,13 +97,7 @@ section {
   align-items: center;
 }
 
-.header__logo {
-  width: 3%;
-  height: 48px;
-  margin: 0 2rem 0 2rem;
-}
-
-.header__nombre, .footer__nombre {
+.footer__nombre {
   width: 68%;
   margin: 0 0 0 2rem;
   font-weight: bold;
@@ -85,16 +106,20 @@ section {
   color: black;
 }
 
-.header__nav, .footer__nav {
-  width: 32%;
+.footer__nav {
+  width: 30%;
   margin: 0 1rem 0 1rem;
   line-height: 1.6;
 }
 
-.header__nav a, .footer__nav a {
+.footer__nav a {
   margin: 0 1rem 0 1rem;
 }
 
+.footer__nav__iconos {
+	width: 15%;
+	margin-top: 0.8rem;
+}
 /** slide **/
 
 .container {
@@ -102,8 +127,8 @@ section {
     margin: 2rem auto;
     padding-top: 2rem;
     background-color: var(--colorPrimario);
-    width: 100%;
-    padding: 30px;
+    width: 90%;
+    padding: 10px;
 }
 
 ul, li {
@@ -151,7 +176,7 @@ position:relative;
 
 .menu{
   text-align: center;
-  margin: 20px;
+  margin: 0.5rem 0;
 }
 
 .menu li{
@@ -164,10 +189,10 @@ position:relative;
   color: var(--colorPrimario);
   text-decoration: none;
   background-color: black;
-  padding: 10px;
-  width: 60px;
-  height: 60px;
-  font-size: 20px;
+  padding: 0.4rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
   border-radius: 100%;
 }
 
@@ -192,6 +217,14 @@ h2 {
   text-align: center;
   display: block;
   width: 100%;
+  margin: 0.20rem 0;
+}
+
+.contenedor>h2 {
+  border-color: var(--colorPrimario);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin: 0 0 0 0;
 }
 
 #elemento {
@@ -202,19 +235,11 @@ h2 {
   border: 1px solid #f7be68;
 }
 
-#elemento:hover {
-  /*transform: rotateY(180deg);*/
-}
-
-.elemento__imagen{
-  /*width: 100%;
-  height: 100%;*/
-  display: block;
-}
-
-#elemento:hover {
-	transform: rotateY(180deg);
-	opacity: 0;
+.elemento__imagen img {
+	object-fit: cover;
+	width: 23.8rem;
+	height: 17rem;
+	margin: 0 0 -1rem 0;
 }
 
 .elemento__nombre {
