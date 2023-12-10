@@ -22,6 +22,8 @@ No te olvides de utilizar atributos alt en las imágenes para accesibilidad.
 
 Si lo consideras necesario, agrega animaciones o transiciones para hacer la experiencia más atractiva.
 
+token: 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
+
 ¡¡ Denle rienda a la imaginación!!
 
 Sugerencias: Planifica la estructura de tu HTML antes de comenzar a codificar. Utiliza comentarios en tu código para explicar partes importantes o complejas. Realiza pruebas en diferentes navegadores para asegurarte de que tu diseño se vea bien en todos ellos.
